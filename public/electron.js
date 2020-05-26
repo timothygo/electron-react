@@ -15,8 +15,9 @@ app.on("ready", () => {
     show: config.show,
     frame: config.frame,
     webPreferences: {
-      nodeIntegration: true,
-      devTools: isDev
+      nodeIntegration: false,
+      devTools: isDev,
+      preload: __dirname + "/preload.js"
     }
   });
   if (!isDev) mainWindow.setMenu(null);
