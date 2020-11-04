@@ -6,7 +6,8 @@ const config = {
   bacgroundColor: "#fff",
   resizable: true,
   show: false,
-  frame: false
+  frame: false,
+  transparent: false
 };
 
 module.exports = config;
