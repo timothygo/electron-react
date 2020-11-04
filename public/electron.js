@@ -14,6 +14,7 @@ app.on("ready", () => {
     resizable: config.resizable,
     show: config.show,
     frame: config.frame,
+    transparent: config.transparent
     webPreferences: {
       nodeIntegration: false,
       devTools: isDev,
